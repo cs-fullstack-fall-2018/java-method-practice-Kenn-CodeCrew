@@ -31,6 +31,7 @@ Function Return
 
 * ```return newArray```
 
+```
 ## Exercises
 1. Create a function that’s passed two numbers and prints the sum.
 
@@ -76,12 +77,34 @@ FH: public static int newFunction(ArrayList<String> nameArray, int returnItemInd
 Return: nameArray.get(returnItemIndex)
 
 8. Create a function that’s passed two numbers and returns the sum. Create another function that takes the sum of that function and prints “The sum is [SUM]“
-Main: newFunction(
-FH:
-Return: 
+Main: newFunction(number1, number2)
+FH: public static int newFunction(int number1, int number2){
+Return: number1+number2
+
+AnotherFunction
+Main: anotherFunction(newFunction(number1, number2));
+FH: public static void anotherFunction(int sum){
+Return: NONE
+
 9. Create a function that’s passed two numbers and returns the sum. Create another function that takes the sum of that function and returns “The sum is [SUM]“
+
 10. Create a function that’s passed two names and returns an Array. Create another function that’s passed two integers and returns the difference. Create a third function that’s passed an integer array and prints it.
 
+FirstFunction
+Main: firstFunction(name1, name2)
+MH: public static ArrayList<String> firstFunction(String name1, String name2){
+Return: anArray
+  
+SecondFunction
+Main: secondFunction(number1, number2);
+MH: public static int secondFunction(int num1, int num2){
+Return: num1-num2
+
+ThirdFunction
+Main: thirdFunction(numberList);
+MH: public static void thirdFunction(ArrayList<Integer> numberList){
+Return: NONE
 
 **EXTRA CREDIT:**
 Create the entire program. Create a function that’s passed two numbers and ask if the user wants to add, subtract, multiply, or divide. Return a string that prints the two numbers, which operation it did, and the result.
+```
