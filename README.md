@@ -10,7 +10,7 @@ Main
 
 Function Declaration
 
-* ```public static String newFunction(int num1, int num2, int num3){```
+* ```public static int newFunction(int num1, int num2, int num3){```
 
 Function Return
 
